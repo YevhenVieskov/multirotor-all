@@ -1,9 +1,12 @@
+name: voila
 channels:
   - conda-forge
 dependencies:
   - appmode
   - bqplot
+  - scipy
   - numpy
   - ipywidgets
+  - ipyvuetify
   - matplotlib
   - voila
