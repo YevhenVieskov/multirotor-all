@@ -3,6 +3,7 @@ channels:
 dependencies:
   - appmode
   - bqplot
+  - scipy
   - numpy
   - ipywidgets
   - ipyvuetify
