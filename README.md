@@ -12,7 +12,7 @@ To start run:
 Slides are available in root directory.
 
 ![DroneApp](DroneApp_logo.png)
-<img src="logo_sizinglab.png" style="float:right; max-width: 20px; display: inline" alt="SizingLab" /></a>
+<img src="logo_sizinglab.png" style="float:right; max-width: 15px; display: inline" alt="SizingLab" /></a>
 
 To run Binder, click on the lower tab:
 
