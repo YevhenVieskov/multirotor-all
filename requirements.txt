@@ -7,5 +7,4 @@ scipy
 ipywidgets>=7.5.0
 pandas
 matplotlib
-nbgitpuller
 graphviz
