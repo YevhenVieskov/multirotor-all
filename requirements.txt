@@ -11,3 +11,4 @@ graphviz
 statsmodels
 seaborn
 sklearn
+ipympl
