@@ -14,3 +14,4 @@ seaborn
 sklearn
 ipympl
 bs4
+lxml
