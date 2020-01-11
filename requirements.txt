@@ -9,3 +9,5 @@ pandas
 matplotlib
 graphviz
 statsmodels
+seaborn
+sklearn
