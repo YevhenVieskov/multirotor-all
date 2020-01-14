@@ -15,3 +15,4 @@ sklearn
 ipympl
 bs4
 lxml
+git+https://github.com/afeiszli/jupyter-voila-extension.git
