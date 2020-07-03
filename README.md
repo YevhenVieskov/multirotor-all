@@ -4,7 +4,8 @@
 Click on the Binder tab to start the Voila standalone web app:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aitorochotorena/multirotor-all/master?urlpath=voila)
-binder just [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aitorochotorena/multirotor-all/master)
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aitorochotorena/multirotor-all/master?urlpath=voila)
 
 Work related to the design and optimization of multirotor drone as part of the tasks for the DroneApp project and SizingLab Project.
 
@@ -18,3 +19,36 @@ Then, open the file `00_Introduction.ipynb`.
 
 ![DroneApp](DroneApp_logo.png)
 <img src="logo_sizinglab.png" style="float:right; max-width: 15px; display: inline" alt="SizingLab" /></a>
+
+**Table of contents**
+
+1. Case Study. An overview of the different drone's architecture history and components.
+2. Sizing scenarios definition. Definition of the design drivers for each of the different static and vertical flight missions.
+3. Sizing scenarios equation. Overview of some of the main design equations for each missions.
+4. Scaling laws for electric motors. Application of the derived scaling laws on given references from data catalogues.
+5. Scaling laws for ESC. Application of the derived scaling laws on given references from data catalogues.
+6. Scaling laws for batteries. Application of the derived scaling laws on given references from data catalogues.
+7. Scaling laws for cables. Application of the derived scaling laws on given references from data catalogues.
+8. Propeller static regressions. Application of derived surrogate models on given references from data catalogues for static missions, such as hovering or take-off.
+9. Propeller regressions for vertical flight. Visualization tools of thrust and power coefficient as function of beta and advance ratio.
+10. Single sizing code for propeller component (TP, consideration of just hover and take-off)
+11. Single sizing code for motor component (TP, consideration of just hover and take-off)
+12. Single sizing code for battery and ESC component (TP, consideration of just hover and take-off)
+13. Single sizing code for frame component (TP, consideration of just hover and take-off)
+14. Basic global sizing code (hover, take-off)
+15. Sizing code of propeller considering vertical flight.
+16. Basic sizing code considering all global constraints.
+17. Monotonicity table to reduce the problem to the necessary constraintss.
+18. Basic sizing code after application of MP1.
+19. Basic sizing code considering coupling techniques and MP1.
+20. Basic sizing code considering coupling techniques and MP1.
+21. Mathematical optimization and rendering the final geometry using 3D visualization tools.
+22. Complete optimization (hovering, take-off and vertical flight) using data catalogues, pareto charts and decision trees and rendering the final geometry using 3D visualization tools.
+23. Complete optimization (hovering, take-off and vertical flight) using data catalogues, pareto charts and decision trees.
+24. Validation on mini quadcopter MK4.
+25. Validation on oktocopter S1000+.
+26. Validation on taxi-drone Ehang184.
+27. Validation on taxi-drone Ehang184.
+28. Multiinput creation of Pareto charts for any data catalogue (use of upload button)
+A1. Quadro description
+A2. Sizing equations overview.
