@@ -15,17 +15,17 @@
 
                 return [
                         { name: 'batpars', type: 'group', caption: 'Battery params.' },
-                        { name: 'Vol_bat', type: 'number', step:1, initial:923.26, caption: 'Volume battery[cm^3]' },
+                        { name: 'Vol_bat', type: 'number', step:1, initial:0.00092326, caption: 'Volume battery[mm^3]' },
                         { name: 'proppars', type: 'group', caption: 'Propeller params.' },
-                        { name: 'Dpro',  type: 'number', step:1, initial:45.72, caption: 'Propeller diameter [cm]' },
-                        { name: 'pitch', type: 'number', step:1, initial:13.97000002032, caption: 'Pitch [cm]' },
+                        { name: 'Dpro',  type: 'number', step:1, initial:0.4572, caption: 'Propeller diameter [mm]' },
+                        { name: 'pitch', type: 'number', step:1, initial:0.1397000002032, caption: 'Pitch [mm]' },
                         { name: 'motpars', type: 'group', caption: 'Motor params.' },
-                        { name: 'Lmot', type: 'number', step:1, initial:4.82874856789052, caption: 'Motor length [cm]' },
+                        { name: 'Lmot', type: 'number', step:1, initial:0.04233049840197616, caption: 'Motor length [mm]' },
                         { name: 'config', type: 'group', caption: 'Configuration' },
-                        { name: 'Npro',  type: 'number', step:1, initial:4.0, caption: 'Number of propeller [-]' },
-                        { name: 'Nproarm',  type: 'number', step:1, initial:1, caption: 'Number of propeller per arm [-]' },
-                        { name: 'Lbra',  type: 'number', step:1, initial:32.32892203584895, caption: 'Arm length [cm]' },
-                        { name: 'Dout',  type: 'number', step:1, initial:3.7212302381895506, caption: 'Side arm [cm]' },
+                        { name: 'Npro',  type: 'number', step:1, initial:8.0, caption: 'Number of propeller [-]' },
+                        { name: 'Nproarm',  type: 'number', step:1, initial:ToggleButtons(description='Number of propellers per arm:', layout=Layout(width='600pt'), options=('Single rotor setup', 'Coaxial setup'), style=ToggleButtonsStyle(description_width='240pt'), value='Single rotor setup'), caption: 'Number of propeller per arm [-]' },
+                        { name: 'Lbra',  type: 'number', step:1, initial:0.5973605875414794, caption: 'Arm length [mm]' },
+                        { name: 'Dout',  type: 'number', step:1, initial:0.0353339974391487, caption: 'Side arm [mm]' },
                         { name: 'position', type: 'group', caption: 'Positioning' },
                         { name: 'x',    type: 'number', step:1, initial: 0, caption: 'X pos' },
                         { name: 'y',    type: 'number', step:1, initial: 0, caption: 'Y pos' },
@@ -35,6 +35,7 @@
                         { name: 'c',    type: 'number', step:1, initial: 0, caption: 'Z rot' }
                        ];
             }
+
 
             function main(p) {
 
@@ -61,9 +62,7 @@
                     Lbra=p.Lbra,
                     Dout=p.Dout,
                     Npro=p.Npro,
-                    Nproarm=p.Nproarm,
-                    Narm=Npro/Nproarm;
-
+                    Nproarm=p.Nproarm;
 
                 let x = p.x,
                     a = p.a,
@@ -122,7 +121,7 @@
                 //Motor and propeller iteration:
                var cubes = new Array();
                for(i=0; i&lt;Npro; i++) {
-                  cubes[i] = rotate([0,0,i/Narm*360], 
+                  cubes[i] = rotate([0,0,i/Npro*360], 
                      translate([Lbra,0,0], 
                      moteur.setColor(0,1,0),propeller.setColor(0,0,1).translate([0, 0, Lmoteur+Hsha/2])         
                      ));
@@ -139,7 +138,7 @@
 
                var arm = new Array();
                for(i=0; i&lt;Npro; i++) {
-                  arm[i] = rotate([0,0,i/Narm*360], 
+                  arm[i] = rotate([0,0,i/Npro*360], 
                   cube(size=[Lbra, Dout/2, Dout/2]).rotateX(90));
                }   
 
