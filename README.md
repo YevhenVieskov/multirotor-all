@@ -49,6 +49,9 @@ Then, open the file `00_Introduction.ipynb`.
 24. Validation on oktocopter S1000+.
 25. Validation on taxi-drone Ehang184.
 26. Multiinput creation of Pareto charts for any data catalogue (use of upload button)
+
 A1. Quadro description
+
 A2. Sizing equations overview.
+
 + decision trees files
