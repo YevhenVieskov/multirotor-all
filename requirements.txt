@@ -16,3 +16,4 @@ ipympl
 bs4
 lxml
 PyGithub
+pydot
