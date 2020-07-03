@@ -3,9 +3,9 @@
 
 Click on the Binder tab to start the Voila standalone web app:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aitorochotorena/multirotor-all/master?urlpath=voila)
+launch on Voilà tool: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aitorochotorena/multirotor-all/master?urlpath=voila)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aitorochotorena/multirotor-all/master?urlpath=voila)
+launch on binder:[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/aitorochotorena/multirotor-all/master)
 
 Work related to the design and optimization of multirotor drone as part of the tasks for the DroneApp project and SizingLab Project.
 
@@ -41,14 +41,16 @@ Then, open the file `00_Introduction.ipynb`.
 17. Monotonicity table to reduce the problem to the necessary constraintss.
 18. Basic sizing code after application of MP1.
 19. Basic sizing code considering coupling techniques and MP1.
-20. Basic sizing code considering coupling techniques and MP1.
-21. Mathematical optimization and rendering the final geometry using 3D visualization tools.
-22. Complete optimization (hovering, take-off and vertical flight) using data catalogues, pareto charts and decision trees and rendering the final geometry using 3D visualization tools.
-23. Complete optimization (hovering, take-off and vertical flight) using data catalogues, pareto charts and decision trees.
-24. Validation on mini quadcopter MK4.
-25. Validation on oktocopter S1000+.
-26. Validation on taxi-drone Ehang184.
-27. Validation on taxi-drone Ehang184.
-28. Multiinput creation of Pareto charts for any data catalogue (use of upload button)
+20. Mathematical optimization and rendering the final geometry using 3D visualization tools.
+21. Complete optimization (hovering, take-off and vertical flight) using data catalogues, pareto charts and decision trees and rendering the final geometry using 3D visualization tools.
+22. Complete optimization (hovering, take-off and vertical flight) using data catalogues, pareto charts and decision trees.
+23. Validation on mini quadcopter MK4.
+24. Validation on oktocopter S1000+.
+25. Validation on taxi-drone Ehang184.
+26. Multiinput creation of Pareto charts for any data catalogue (use of upload button)
+
 A1. Quadro description
+
 A2. Sizing equations overview.
+
++ decision trees files
